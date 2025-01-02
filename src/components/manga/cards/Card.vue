@@ -6,7 +6,7 @@
     />
     <div class="details masked-overflow">
         <div class="title">
-            <NuxtLink :to="'/manga/' + mdata.manga.id">
+            <NuxtLink :to="mdata.manga.url" target="_default">
                 {{ mdata.manga.displayTitle ?? mdata.manga.title }}
             </NuxtLink>
             <Icon :fill="!!mdata.icon.fill" v-if="mdata.icon" :title="mdata.icon.title">
@@ -50,13 +50,12 @@
         <div class="tags">
             <div class="header">Tags: </div>
             <div class="tag nsfw" v-if="mdata.manga.nsfw">{{ mdata.rating ?? 'NSFW' }}</div>
-            <NuxtLink
+            <div
                 class="tag"
                 v-for="tag of mdata.manga.tags"
-                :to="'/search/all?include=' + tag.toLowerCase()"
             >
                 {{ tag }}
-            </NuxtLink>
+            </div>
         </div>
         <div class="description">
             <Markdown :content="mdata.manga.description" />
@@ -67,12 +66,13 @@
     <Cover
         type="link"
         :url="sdata.manga.cover"
-        :link="'/import?url=' + encodeURIComponent(sdata.manga.url)"
+        :link="sdata.manga.url"
     />
     <div class="details masked-overflow">
         <div class="title">
             <NuxtLink
-                :to="'/import?url=' + encodeURIComponent(sdata.manga.url)"
+                :to="sdata.manga.url"
+                target="_default"
             >
                 {{ sdata.manga.title }}
             </NuxtLink>
@@ -98,13 +98,12 @@
         <div class="tags">
             <div class="header">Tags: </div>
             <div class="tag nsfw" v-if="sdata.manga.nsfw">NSFW</div>
-            <NuxtLink
+            <div
                 class="tag"
                 v-for="tag of sdata.manga.tags"
-                :to="'/search/all?include=' + tag.toLowerCase()"
             >
                 {{ tag }}
-            </NuxtLink>
+        </div>
         </div>
         <div class="description">
             <Markdown :content="sdata.manga.description" />

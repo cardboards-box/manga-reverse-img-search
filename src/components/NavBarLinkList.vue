@@ -4,6 +4,11 @@
     <p>Home</p>
 </NuxtLink>
 
+<NuxtLink to="/about" active-class="active" @click="clicked">
+    <Icon>description</Icon>
+    <p>About</p>
+</NuxtLink>
+
 <div class="fill"></div>
 
 <NuxtLink to="/settings" active-class="active" @click="clicked">

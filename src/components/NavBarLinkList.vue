@@ -16,6 +16,16 @@
     <p>Settings</p>
 </NuxtLink>
 
+<NuxtLink to="/privacy" active-class="active" @click="clicked">
+    <Icon>lock</Icon>
+    <p>Privacy Policy</p>
+</NuxtLink>
+
+<NuxtLink to="/terms" active-class="active" @click="clicked">
+    <Icon>gavel</Icon>
+    <p>Terms of Service</p>
+</NuxtLink>
+
 <a href="https://discord.gg/RV9MvvYXsp" target="_blank" @click="clicked">
     <img src="/discord-icon.png" alt="Discord Logo" />
     <p>Discord Server</p>

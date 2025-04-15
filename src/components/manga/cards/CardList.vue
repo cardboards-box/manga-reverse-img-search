@@ -93,11 +93,14 @@ type SearchType = MatchResult | VisionResult | BaseResult | ImageSearchManga;
 
 const { listStyle, fillPage, infiniteScroll } = useAppSettings();
 const { keys } = useUtils();
+const route = useRoute();
+
 const stickyheader = ref<HTMLElement>();
 const emits = defineEmits<{
     (e: 'onscrolled'): void;
     (e: 'reload'): void;
     (e: 'headerstuck', value: boolean): void;
+    (e: 'back'): void;
 }>();
 const scroller = ref<HTMLElement>();
 const props = defineProps<{
@@ -177,7 +180,9 @@ const onScroll = () => {
     emits('onscrolled');
 }
 
-const back = () => history.back();
+const back = () => {
+    emits('back');
+};
 
 onMounted(() => {
     const observer = new IntersectionObserver(

@@ -5,6 +5,7 @@
         :pending="pending"
         :noresults="!!results"
         @headerstuck="(v) => stuck = v"
+        @back="back"
     >
         <ReverseSearch
             v-model="search"
@@ -45,6 +46,10 @@
         pending.value = true;
         results.value = (await toPromise(reverseFile(file), true)) ?? null;
         pending.value = false;
+    }
+
+    const back = () => {
+        history.back();
     }
 
     useHead({ title });

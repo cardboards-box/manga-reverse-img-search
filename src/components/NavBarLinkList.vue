@@ -9,6 +9,11 @@
     <p>About</p>
 </NuxtLink>
 
+<NuxtLink to="/bot" active-class="active" @click="clicked">
+    <Icon>smart_toy</Icon>
+    <p>Discord Bot</p>
+</NuxtLink>
+
 <div class="fill"></div>
 
 <NuxtLink to="/settings" active-class="active" @click="clicked">

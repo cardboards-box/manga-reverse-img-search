@@ -273,6 +273,10 @@ $icon-height: calc(var(--icon-size) + #{$icon-padding * 2} + 2px);
     }
 }
 
+a {
+    text-decoration: none !important;
+}
+
 @media only screen and (max-width: 600px) {
     .invert-breakpoint.has-text {
         padding: 5px;

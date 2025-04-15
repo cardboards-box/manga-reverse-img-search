@@ -44,15 +44,6 @@
             </li>
         </ul>
 
-        <h2 class="margin-top">Discord Bot</h2>
-        <p class="margin-top">
-            There is a discord bot that can perform these searches directly in your favourite server! <br>
-            You can react to the image with 🍝, 🔍 or 🔎 and it will find an image the source for the page! <br>
-            You can also use the slash command <code>/manga-image-lookup url:https://your-porn-manga.com/yuri-is-best</code> and it will perform the same search <br>
-            There are plans to move it to a stand alone bot as currently it's baked in with a bot that has a bunch of other features... but for now... <br>
-            You can install it by going <a href="https://discord.com/api/oauth2/authorize?client_id=905632533981577247&permissions=8&scope=bot%20applications.commands" target="_blank">here</a> and following the discord prompt.
-        </p>
-
         <h2 class="margin-top">Questions?</h2>
         <p class="margin-top">
             If you have any questions, feel free to join <a href="https://discord.gg/RV9MvvYXsp" target="_blank">my discord server</a> or find me in the MangaDex one (I'm <a href="https://discord.com/users/191100926486904833" target="_blank">Cardboard</a>). <br>

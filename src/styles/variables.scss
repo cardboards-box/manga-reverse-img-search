@@ -4,7 +4,8 @@ $primary-color: #726ae4;
 $primary-color-trans: rgba( color.scale($primary-color, $lightness: 20%), 0.8 );
 
 :root {
-    --bg-color: rgba(12, 9, 12, 1);
+
+    --bg-color: #011111FF;
     --bg-color-accent: rgba(0, 0, 0, 0.25);
     --bg-color-accent-darkish: rgba(0, 0, 0, 0.45);
     --bg-color-accent-dark: rgba(0, 0, 0, 0.75);
@@ -26,10 +27,10 @@ $primary-color-trans: rgba( color.scale($primary-color, $lightness: 20%), 0.8 );
     --font-family: 'Roboto';
     --mobile-limit: 1050px;
     --margin: 0.75rem;
-    --bg-image: linear-gradient(to right bottom, #1953aa, #693594, #57195c, #1a10a0, #171130);
+    --bg-image: linear-gradient(0deg, #222222FF, #222222FF);
     --bg-image-position: center;
-    --bg-image-size: cover;
     --bg-image-repeat: no-repeat;
+    --bg-image-size: cover;
     --bg-image-filter: ;
 
     --ctrl-bg: var(--bg-color-accent);
@@ -37,3 +38,5 @@ $primary-color-trans: rgba( color.scale($primary-color, $lightness: 20%), 0.8 );
     --full-height: min(100vh, 100%);
     --brd-radius: 5px;
 }
+
+

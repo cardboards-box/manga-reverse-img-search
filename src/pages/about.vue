@@ -3,9 +3,9 @@
         <h2>About MangaBox</h2>
 
         <p class="margin-top">
-            This site was originally a custom manga-reader that had the ability to track progress (down to the page number) and sync across multiple devices. <br>
-            It was originally just a personal project to learn nuxt and vue, but I decided to make it public. <br>
-            I have since removed the reader portion of it because I received a DMCA request from comeso GmbH (they're ruining fan translations and the manga community in general). <br>
+            This site is a personal project that I host and maintain for free and will never have ads. <br>
+            It was originally a manga reading website centered around MangaDex that I wrote to learn nuxt and vue. <br>
+            I have since started working as a front-end developer for MangaDex so I decided to strip the reading portion of this website out and focus on the reverse image search portion of it. <br>
             So now it's just for reverse image searching manga pages.
         </p>
 
@@ -23,7 +23,7 @@
         </ul>
         <p class="margin-top">
             I use multiple sources because each one has its own strengths and weaknesses. <br>
-            MangaBox-Match is geared towards searching MangaDex specific content and is incredibly accurate for standard manga (fuck long-strip) uploaded after Dec 2022. <br>
+            MangaBox-Match is geared towards searching MangaDex specific content and is incredibly accurate for standard manga uploaded after Dec 2022. <br>
             Google Vision and SauceNAO don't scan MangaDex because of it's nature as a SPA (also using nuxt) but are useful for a last-ditch attempt to find a match. <br>
             I'm aware SauceNAO claims to scan MangaDex but it is VERY far behind MangaBox-Match, I've also reached out to the author to collab on making it better but was ignored so ¯\_(ツ)_/¯
         </p>
